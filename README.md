@@ -127,7 +127,6 @@ This generates final publication-quality plots and JSON data.
 
 * **Fit priors**: JSON files located in `params/fit_init_values/*.json`
 * **Ensemble definitions** (beta, mu, ms, volumes, names): `params/ensemble_info.sh`
-* **Plotting styles**: `utils/physrev.mplstyle` (Phys. Rev. style)
 * **Data paths**: Configured in `params/env.sh`
 
 ---
@@ -158,10 +157,10 @@ Intermediate and final analysis results reside under the mounted `$lqcd_data_pat
 ## 📖 Explanation of Fit Variations (Global Fit)
 
 * **`None`**: Default fit including all statistical and systematic errors
-* **`mpi`**: Exclude statistical error of pion mass (`m_pi`)
-* **`metas`**: Exclude statistical error of `eta_s` meson mass
-* **`D_S`** (charmed fits only): Exclude statistical error of `D_s` meson mass
-* **`alttc_stat`**: Exclude statistical error of lattice spacing
+* **`mpi`**: Exclude statistical error of pion mass (`m_pi`) to estimate statistical uncertainties
+* **`metas`**: Exclude statistical error of `eta_s` meson mass to estimate statistical uncertainties
+* **`D_S`** (charmed fits only):  Shift `D_s` mass by 1-sigma to estimate systematic uncertainties
+* **`alttc_stat`**: Exclude statistical error of lattice spacing to estimate statistical uncertainties
 * **`alttc_sys`**: Shift lattice spacing (`w0`) by 1-sigma to estimate systematic uncertainties
 
 These variations allow estimation of a comprehensive error budget for physical predictions.
