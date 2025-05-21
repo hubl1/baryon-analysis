@@ -1,6 +1,6 @@
-# 🧪 Baryon Mass and Sigma-Term Analysis from Lattice QCD
+# 🧪 Baryon Mass, Sigma-Term and Trace Anomaly Analysis from Lattice QCD
 
-This repository provides scripts, input files, and plotting utilities necessary for extracting baryon and meson masses, effective masses, and sigma terms from 2-point correlator data generated in lattice QCD simulations.
+This repository provides scripts, input files, and plotting utilities necessary for extracting baryon and meson masses, effective masses, sigma terms and trace anomaly contributions from 2-point correlation functions data generated in lattice QCD simulations.
 
 ---
 
