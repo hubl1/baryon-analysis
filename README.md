@@ -39,16 +39,14 @@ params/env.sh
 
 ## 📦 Getting the Input Data
 
-You can download a complete archive of `lqcd_data` (\~32 GB) with the following command:
-
+To download the complete dataset:
 ```bash
-curl -f -C - -o lqcd_data.tar.gz \
-  https://ksefile.hpccube.com:65241/efile/share/L3B1YmxpYy9ob21lL2h1Ymw=/8iadVJCqq
+curl -L -o lqcd_data.tgz https://zenodo.org/record/15455605/files/lqcd_data.tgz
 
-# Then extract it
-
-tar -xvzf lqcd_data.tar.gz
+tar -xvzf lqcd_data.tgz
 ```
+
+After unpacking:
 
 The unpacked structure looks like:
 
