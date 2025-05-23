@@ -1,0 +1,17 @@
+fasteners
+filelock
+gplearn
+gvar
+h5py
+joblib
+lsqfit
+matplotlib
+numpy
+pandas
+scipy
+seaborn
+setuptools
+scikit-learn
+tqdm
+wheel
+Pillow

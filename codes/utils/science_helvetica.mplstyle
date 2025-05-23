@@ -1,0 +1,16 @@
+text.usetex : True
+font.family : sans-serif
+font.sans-serif : ['Helvetica']
+mathtext.fontset : custom
+text.latex.preamble : \usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[helvet]{mathastext}
+axes.labelsize : 9
+xtick.labelsize : 9
+ytick.labelsize : 9
+legend.fontsize : 8
+legend.title_fontsize : 8
+axes.titlesize : 10
+figure.figsize : [6.9, 3.0]
+savefig.bbox : tight
+savefig.pad_inches : 0.05

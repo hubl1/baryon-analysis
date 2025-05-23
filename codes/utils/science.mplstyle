@@ -1,0 +1,117 @@
+########################################
+#  science.mplstyle  –  Science-compatible
+########################################
+
+# ----- Color & line style cycle -----------
+# axes.prop_cycle: cycler('color', ['#5d81b4', '#e09b24', '#8eb031', '#eb6235', '#8678b2', '#c46e1a', '#5c9dc7', '#ffbf00', '#a5609c']) + cycler('ls', ['-', '--', '-.', ':', (0, (1, 1)), (0, (3, 1, 1, 1)), (0, (5, 1)), (0, (1, 1)), '-'])
+
+# ----- Axes -------------------------------
+axes.titlesize       : large
+axes.labelsize       : 9
+axes.formatter.use_mathtext : True
+axes.linewidth       : 0.5
+
+# ----- Grid -------------------------------
+grid.linewidth       : 0.5
+grid.linestyle       : dashed
+grid.color           : xkcd:light gray
+
+# ----- Lines ------------------------------
+lines.linewidth      : 0.75
+lines.markersize     : 10
+hatch.linewidth      : 0.75
+patch.antialiased    : True
+
+# ----- Ticks (no minor ticks per Science) -
+xtick.top            : True
+xtick.bottom         : True
+xtick.major.size     : 3.0
+xtick.major.width    : 0.5
+xtick.direction      : in
+xtick.labelsize      : 9
+xtick.minor.visible  : False
+
+ytick.left           : True
+ytick.right          : True
+ytick.major.size     : 3.0
+ytick.major.width    : 0.5
+ytick.direction      : in
+ytick.labelsize      : 9
+ytick.minor.visible  : False
+
+# ----- Legend -----------------------------
+legend.frameon       : True
+legend.fontsize      : 8
+legend.handlelength  : 1.375
+legend.labelspacing  : 0.4
+legend.columnspacing : 1
+legend.facecolor     : white
+legend.edgecolor     : white
+legend.framealpha    : 1
+legend.title_fontsize: 8
+
+# ----- Figure size ------------------------
+figure.figsize       : 3.25, 2.0
+figure.subplot.left  : 0.125
+figure.subplot.bottom: 0.175
+figure.subplot.top   : 0.95
+figure.subplot.right : 0.95
+figure.autolayout    : False
+
+# # ----- Fonts (sans-serif, Helvetica) ------
+# text.usetex          : True
+# mathtext.fontset     : dejavusans
+# font.family          : sans-serif
+# font.sans-serif      : Helvetica, Arial, DejaVu Sans, Liberation Sans, sans-serif
+#
+# ----- Fonts (use Helvetica for Science figure compliance) ------
+text.usetex          : True
+# mathtext.fontset     : custom
+# font.family          : sans-serif
+# font.sans-serif      : Helvetica
+text.latex.preamble : \usepackage{helvet} \renewcommand{\familydefault}{\sfdefault} \usepackage[helvet]{mathastext}
+
+# ----- Saving -----------------------------
+path.simplify        : True
+savefig.bbox         : tight
+savefig.pad_inches   : 0.05
+###############################################################################
+#  SCIENCE.MPLSTYLE  –  Helvetica-based sans-serif layout with LaTeX support  #
+###############################################################################
+
+
+# # ------------------------------  基本开关  -----------------------------------
+# text.usetex           : True                     # 由 LaTeX 负责排版所有文本
+# mathtext.fontset      : cm                       # 保留 CM 数学回退（仅防止缺字）
+# font.family           : sans-serif
+# font.sans-serif       : Helvetica, Arial, DejaVu Sans, Liberation Sans, sans-serif
+
+# # --------------------------  LaTeX 前导文件  ---------------------------------
+# # 多行字符串在 .mplstyle 中用 “|” 语法；下面 4 行会原样写入 LaTeX preamble
+# # text.latex.preamble : |
+# #     \usepackage{helvet}                % Helvetica 主字体
+# #     \renewcommand{\familydefault}{\sfdefault}  % 默认为无衬线
+# #     \usepackage[helvet]{mathastext}    % 将数学也映射到 Helvetica，并提供希腊字母
+# #     %\usepackage{siunitx}              % (可选) 专业单位排版
+# text.latex.preamble : \usepackage{helvet} \renewcommand{\familydefault}{\sfdefault} \usepackage[helvet]{mathastext}
+
+
+# # --------------------------  其余图形选项（示例）  ---------------------------
+# axes.labelsize        : 9
+# axes.titlesize        : large
+# axes.linewidth        : 0.5
+
+# xtick.labelsize       : 9
+# ytick.labelsize       : 9
+# xtick.direction       : in
+# ytick.direction       : in
+# xtick.minor.visible   : False          # 避免 minor ticks（Science 要求）
+# ytick.minor.visible   : False
+
+# lines.linewidth       : 0.75
+# legend.fontsize       : 8
+# legend.frameon        : True
+
+# figure.figsize        : 4.76, 2.7      # 默认双栏宽（12.1 cm ≈ 4.76 in）
+# savefig.bbox          : tight
+# savefig.pad_inches    : 0.05
